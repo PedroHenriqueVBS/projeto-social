@@ -1,30 +1,38 @@
-body {
+* {
     margin: 0;
     border: 0;
-    background-image: url(pacote-d013/imagens/fundo-madeira.jpg);
+    box-sizing: border-box;
+}
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+
+    background: url(pacote-d013/imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
     
 }
 
-#flex {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    
+main {
+    position: relative;
+    height: 100vh;
 }
 
 #frame {
-    margin: 0;
-    border: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+    width: 311px;
+    height: 627px;
+    background: url(pacote-d013/imagens/frame-iphone.png) no-repeat ;
 }
 
 #menu {
-
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -32,41 +40,13 @@ body {
 
 }
 
-#home {
-    background-image: url(pacote-d013/imagens/logo-home.jpg);
-    background-size: contain;
-}
-
-#youtube {
-    background-image: url(pacote-d013/imagens/logo-youtube.jpg);
-    background-size: contain;
-}
-
-#github {
-    background-image: url(pacote-d013/imagens/logo-github.jpg);
-    background-size: contain;
-}
-
-#facebook {
-    background-image: url(pacote-d013/imagens/tela-facebook.jpg);
-    background-size: contain;
-}
-
-#twitter {
-    background-image: url(pacote-d013/imagens/logo-twitter.jpg);
-    background-size: contain;
-}
-
-#instagram {
-    background-image: url(pacote-d013/imagens/tela-instagram.jpg);
-    background-size: contain;
-}
-
-input {
+#menu a img  {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
+    margin: 10px;
 }
+
 
 
 
